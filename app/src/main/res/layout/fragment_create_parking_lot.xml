@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateParkingLotFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="401dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:background="#FFFFFF"
+            android:text="X"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="Create Parking-Lot"
+            android:textColor="#116F81"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <EditText
+                android:id="@+id/editTextNameParkingLot"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="name of parking-lot" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="Location:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextLat"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Latitude"/>
+
+            <EditText
+                android:id="@+id/editTextLng"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Longitude" />
+
+            <EditText
+                android:id="@+id/editTextContents"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Parking lot contents" />
+
+            <Button
+                android:id="@+id/bottomCreateParkingLotElement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonshape"
+                android:text="create"
+                android:textColor="#116F81"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

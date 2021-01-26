@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="391dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_gravity="top"
+            android:background="#FFFFFF"
+            android:text="X"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp"
+            android:text="Update your details"
+            android:textColor="#116F81"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="40dp">
+
+            <EditText
+                android:id="@+id/editTextUpdateUserName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="update user name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextUpdateRole"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="update role"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextUpdateAvatar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="update avatar"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/bottomUpdateUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonshape"
+                android:text="update"
+                android:textColor="#116F81" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
